@@ -9,7 +9,7 @@ Resources:
           DomainName:
             Fn::Join:
               - ""
-              - - Ref: ApiGatewayRestApi
+              - - Ref: HttpApi
                 - ".execute-api."
                 - Ref: AWS::Region
                 - ".amazonaws.com"
