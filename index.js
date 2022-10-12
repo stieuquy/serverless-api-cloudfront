@@ -103,7 +103,7 @@ class ServerlessApiCloudFrontPlugin {
   }
 
   prepareOrigins(distributionConfig) {
-    distributionConfig.Origins[0].OriginPath = `/${this.options.stage}`;
+    delete distributionConfig.Origins[0].OriginPath;
   }
 
   prepareCookies(distributionConfig) {
